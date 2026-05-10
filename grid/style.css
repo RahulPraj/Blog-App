@@ -1,0 +1,24 @@
+.parent{
+    width: 90vw;
+    height: 90vh;
+    background-color: antiquewhite;
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: 200px 300px;
+    grid-template-rows: 50px 100px 150px;
+    /* grid-auto-flow: row; */
+    /* grid-auto-rows: 50px; */
+    grid-auto-flow: column;
+    /* grid-auto-columns: 50px; */
+}
+
+.child{
+    background-color: blue;
+    border: 1px solid black;
+}
+
+#three{
+    background-color: brown;
+    /* grid-column: span 2; */
+    grid-column:  2/4;
+}
